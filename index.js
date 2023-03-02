@@ -19,7 +19,7 @@ const renderPosts = async (term) => {
                 <p>by ${post.author}</p>
                 <p>${post.body.slice(0, 200)}...</p>
                 <p><small>${post.likes} Likes</small></p>
-                <a href="/details.html?id=${post.id}">Read more</a>
+                <a href="./details.html?id=${post.id}">Read more</a>
             </div>
         `;
   });
