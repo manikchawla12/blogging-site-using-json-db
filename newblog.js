@@ -10,7 +10,7 @@ const createPost = async (e) => {
     likes: 0,
   };
 
-  await fetch("http://localhost:3000/posts", {
+  await fetch("https://manikchawla12.github.io/blogging-site-using-json-db/db.json", {
     method: "POST",
     body: JSON.stringify(record),
     headers: { "Content-Type": "application/json" },
