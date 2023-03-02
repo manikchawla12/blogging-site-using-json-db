@@ -3,7 +3,7 @@ const id = new URLSearchParams(window.location.search).get("id");
 const deleteBtn = document.querySelector(".deleteBtn");
 
 const renderDetails = async () => {
-  const res = await fetch("http://localhost:3000/posts/" + id);
+  const res = await fetch("https://manikchawla12.github.io/blogging-site-using-json-db/db.json/" + id);
   const post = await res.json();
   //console.log(post);
 
@@ -21,7 +21,7 @@ const renderDetails = async () => {
 };
 
 deleteBtn.addEventListener("click", async (e) => {
-  const res = await fetch("http://localhost:3000/posts/" + id, {
+  const res = await fetch("https://manikchawla12.github.io/blogging-site-using-json-db/db.json/" + id, {
     method: "DELETE",
   });
   window.location.replace("/index.html");
