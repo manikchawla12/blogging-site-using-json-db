@@ -2,7 +2,7 @@ const container = document.querySelector(".blogs");
 const search = document.querySelector(".search");
 
 const renderPosts = async (term) => {
-  let uri = "http://localhost:3000/posts?_sort=likes&_order=desc"; //we used likes for sorting the order
+  let uri = "https://manikchawla12.github.io/blogging-site-using-json-db/db.json?_sort=likes&_order=desc"; //we used likes for sorting the order
 
   if (term) {
     uri += `&q=${term}`;    // the 'q' is a key we use while searching something
